@@ -27,7 +27,7 @@ export const emailJob = ()=>{
                             caseV.lng
                         )
                         await emailService.sendEmail({
-                            to: "aj8984524@gmail.com",
+                            to: "ashliac.aam@gmail.com",
                             subject: `New Case : ${caseV.name} ${caseV.lastname}`, 
                             htmlBody: htmlBody
                         });

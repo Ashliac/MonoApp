@@ -18,3 +18,9 @@ app.listen(envs.PORT, () => {
   console.log("Server started")
   emailJob()
 })
+
+
+
+// contraseña del docker
+//user: ashliac
+//ashli123!

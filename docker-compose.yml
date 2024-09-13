@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   case-api:
-    image: jaramillojst/caseapi:latest
-    container_name: case-api
+    image: ashliac/monoapp:latest
+    container_name: mono-app
     ports:
       - "3000:3000"
     environment:
@@ -18,7 +18,7 @@ services:
 
   mongo:
     image: mongo
-    container_name: mongoCase
+    container_name: mongoApp
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example

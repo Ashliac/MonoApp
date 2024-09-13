@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose";// Te permite conectar mongo con node
 
 const caseSchema = new mongoose.Schema({
     name:{
