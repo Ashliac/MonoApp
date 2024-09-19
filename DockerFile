@@ -1,0 +1,23 @@
+#Base Image
+FROM node:20.11.1
+
+#Create app directory
+WORKDIR /app
+
+#Copy the package.json
+COPY package*.json ./
+
+#Install modules
+RUN npm i 
+
+#Copy the rest of the archives
+COPY . . 
+
+#Convert the app.ts in the dist carpet
+RUN npm run build
+
+#Exponer el puerto de nuestro contenedor o imagen
+EXPOSE 3000
+
+#Cuando el contenedor se levante se ejecute la aplicacion
+CMD [ "node", "dist/src/app.js"]
